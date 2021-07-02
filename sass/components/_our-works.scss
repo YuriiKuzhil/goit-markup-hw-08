@@ -1,0 +1,31 @@
+.our-works {
+  padding-bottom: 94px;
+}
+.works-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @extend %list;
+
+  &__item {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $our-works-text-background;
+    color: $primary-white-color;
+  }
+}

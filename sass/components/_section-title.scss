@@ -1,0 +1,9 @@
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-weight: 700;
+  @include text-tyles(36px, 1.17);
+  color: $title-text-color;
+}

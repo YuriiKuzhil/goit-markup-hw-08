@@ -1,0 +1,23 @@
+.page-body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  @include text-tyles(14px, 1.71);
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: $primary-white-color;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.images {
+  display: block;
+}

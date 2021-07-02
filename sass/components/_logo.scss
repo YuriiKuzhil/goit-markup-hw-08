@@ -1,0 +1,14 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  @include text-tyles(26px, 1.19);
+  @extend %link;
+  color: $logo-black-color;
+
+  &__text {
+    color: $accent-color;
+  }
+}
+.logo--text-white {
+  color: $primary-white-color;
+}

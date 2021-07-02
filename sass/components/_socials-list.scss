@@ -1,0 +1,38 @@
+.socials-list {
+  display: flex;
+  @extend %list;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    @extend %link;
+    border-radius: 50%;
+    fill: $icons-color;
+
+    transition: background-color 250ms $timing-function,
+      fill 250ms $timing-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}
+
+.socials-list__link--fill-white {
+  fill: $primary-white-color;
+}
+.socials-list__link--background-grey {
+  background-color: $footer-icon-background;
+}

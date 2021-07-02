@@ -1,0 +1,30 @@
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  @extend %list;
+
+  &__wrapper {
+    display: flex;
+    height: 120px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+
+    background: $features-background-color;
+    border-radius: 4px;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    @include text-tyles(14px, 1.14);
+    text-transform: uppercase;
+    color: $title-text-color;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

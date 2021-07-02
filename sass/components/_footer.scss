@@ -1,0 +1,89 @@
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-background-color;
+}
+.footer-section__container {
+  display: flex;
+  align-items: baseline;
+}
+.address-container {
+  margin-right: 70px;
+}
+.address {
+  margin-top: 20px;
+  font-style: normal;
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 9px;
+    color: $primary-white-color;
+  }
+}
+
+.address-list {
+  @extend %list;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    @extend %link;
+    color: $footer-text-color;
+
+    transition: color 250ms $timing-function;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}
+.footer-socials-container {
+  margin-right: 93px;
+}
+
+.footer-socials-container__text,
+.footer-form__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+.footer-form {
+  &__wrapper {
+    display: flex;
+  }
+  &__label {
+    margin-right: 12px;
+  }
+  &__input {
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    width: 358px;
+    height: 50px;
+
+    background-color: $footer-background-color;
+    border: 1px solid $footer-input-border-color;
+    border-radius: 4px;
+    outline: none;
+  }
+  &__input::placeholder,
+  &__input {
+    @include text-tyles(16px, 1.25);
+    letter-spacing: 0.03em;
+    color: $footer-text-color;
+  }
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 28px;
+  }
+}
