@@ -1,5 +1,6 @@
 .socials-list {
   display: flex;
+  justify-content: center;
   @extend %list;
 
   &__item {

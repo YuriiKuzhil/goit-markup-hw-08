@@ -1,9 +1,18 @@
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and(min-width:1199px) {
+    margin-bottom: 50px;
+  }
+
 
   text-align: center;
   font-weight: 700;
-  @include text-tyles(36px, 1.17);
+  @include text-tyles(28px, 1.18);
   color: $title-text-color;
+
+  @media screen and(min-width:1199px) {
+    @include text-tyles(36px, 1.18);
+  }
 }

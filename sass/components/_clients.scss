@@ -1,11 +1,18 @@
 .clients-list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   @extend %list;
 
+  @media screen and (min-width:768px){
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width:1200px){
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   &__item {
-    width: 170px;
     height: 92px;
   }
   &__link {

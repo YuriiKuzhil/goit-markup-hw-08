@@ -4,11 +4,30 @@
   background-color: $footer-background-color;
 }
 .footer-section__container {
-  display: flex;
-  align-items: baseline;
+  
+  @media screen and (min-width:768px) and (max-width:1199px){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+  @media screen and (min-width:1200px){
+    display: flex;
+    align-items: baseline;
+  }
+  
 }
 .address-container {
-  margin-right: 70px;
+  @media screen and (max-width:1199px){
+    margin-bottom: 60px;
+     text-align: center;
+  }
+  @media screen and (min-width:768px){
+    margin-right: 165px;
+  }
+  @media screen and (min-width:1200px){
+    margin-right: 70px;
+  }
 }
 .address {
   margin-top: 20px;
@@ -41,7 +60,15 @@
   }
 }
 .footer-socials-container {
-  margin-right: 93px;
+  @media screen and (max-width:767px){
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width:1999px){
+     text-align: center;
+  }
+  @media screen and (min-width:1200px){
+    margin-right: 93px;
+  }
 }
 
 .footer-socials-container__text,
@@ -54,20 +81,40 @@
   color: $primary-white-color;
 }
 .footer-form {
+  @media screen and (max-width:1199px){
+    text-align: center;
+  }
   &__wrapper {
-    display: flex;
+    @media screen and (min-width:1200px){
+      display: flex;
+    }
+    
   }
   &__label {
-    margin-right: 12px;
+    @media screen and (min-width:1200px){
+      margin-right: 12px;
+    }
   }
   &__input {
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
 
-    width: 358px;
+    @media screen and (max-width:1199px){
+      margin-bottom: 20px;  
+    }
+    
     height: 50px;
-
+    @media screen and (max-width:479px){
+      width: 100%;
+    }
+    @media screen and (min-width:480px) and (max-width:1999px){
+      width: 450px;
+    }
+    @media screen and (min-width:1200px){
+      width: 358px;
+    }
+    
     background-color: $footer-background-color;
     border: 1px solid $footer-input-border-color;
     border-radius: 4px;
@@ -85,5 +132,9 @@
     align-items: center;
     padding-left: 29px;
     padding-right: 28px;
+
+    @media screen and (max-width:1199px){
+      margin: auto;
+    }
   }
 }
