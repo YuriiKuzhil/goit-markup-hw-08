@@ -204,9 +204,12 @@
             <li class="team-list__item">
               <img
                 class="images"
-                src="./images/product-designer.jpg"
+                srcset="
+                  ./images/mobile/mob-product-designer.jpg    1x,
+                  ./images/mobile/mob-product-designer-2x.jpg 2x
+                "
+                src="./images/mobile/mob-product-designer.jpg"
                 alt="Фото сотрудника команды"
-                width="270"
               />
               <div class="team-list__wrapper">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
@@ -246,9 +249,12 @@
             <li class="team-list__item">
               <img
                 class="images"
-                src="./images/frontend-developer.jpg"
+                srcset="
+                  ./images/mobile/mob-frontend-developer.jpg    1x,
+                  ./images/mobile/mob-frontend-developer-2x.jpg 2x
+                "
+                src="./images/mobile/mob-frontend-developer.jpg"
                 alt="Фото сотрудника команды"
-                width="270"
               />
               <div class="team-list__wrapper">
                 <h3 class="team-list__title">Ольга Репина</h3>
@@ -288,9 +294,12 @@
             <li class="team-list__item">
               <img
                 class="images"
-                src="./images/marketing.jpg"
+                srcset="
+                  ./images/mobile/mob-marketing.jpg    1x,
+                  ./images/mobile/mob-marketing-2x.jpg 2x
+                "
+                src="./images/mobile/mob-marketing.jpg"
                 alt="Фото сотрудника команды"
-                width="270"
               />
               <div class="team-list__wrapper">
                 <h3 class="team-list__title">Николай Тарасов</h3>
@@ -330,9 +339,12 @@
             <li class="team-list__item">
               <img
                 class="images"
-                src="./images/designer.jpg"
+                srcset="
+                  ./images/mobile/mob-designer.jpg    1x,
+                  ./images/mobile/mob-designer-2x.jpg 2x
+                "
+                src="./images/mobile/mob-designer.jpg"
                 alt="Фото сотрудника команды"
-                width="270"
               />
               <div class="team-list__wrapper">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
@@ -426,11 +438,11 @@
       </section>
 
       <!-- Модальное окно -->
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal-form-container">
           <button class="modal-button-close" data-modal-close type="button">
-            <svg width="11" height="11">
-              <use href="./images/icons.svg#icon-button"></use>
+            <svg width="22" height="22">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <form class="modal-form">
@@ -497,7 +509,7 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <span
+              <span class="modal-form__checkbox-text"
                 >Соглашаюсь с рассылкой и принимаю
                 <a class="modal-form__checkbox-link" href=""
                   >Условия договора</a
@@ -509,7 +521,7 @@
             </button>
           </form>
         </div>
-      </div> -->
+      </div>
     </main>
     <footer class="footer-section">
       <div class="container footer-section__container">

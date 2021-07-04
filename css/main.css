@@ -172,6 +172,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -190,14 +191,32 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 581px;
-  min-width: 528px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 449px) {
+  .modal-form-container {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .modal-form-container {
+    min-height: 609px;
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-container {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .is-hidden .modal-form-container {
@@ -240,9 +259,22 @@
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   color: #212121;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__title {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form__text {
@@ -293,7 +325,7 @@
   left: 12px;
 }
 
-.modal-form__label-comments {
+.modal-form__label-textarea {
   margin-bottom: 20px;
 }
 
@@ -327,6 +359,13 @@
 
 .modal-form__checkbox-link {
   color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__checkbox-text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal-form__label {
@@ -701,6 +740,7 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  background-repeat: no-repeat;
   background-color: #2f303a;
 }
 
@@ -709,6 +749,7 @@
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop/hero.jpg);
   }
 }
 
