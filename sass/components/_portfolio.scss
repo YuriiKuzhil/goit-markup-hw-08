@@ -105,7 +105,11 @@
 
     width: 100%;
     height: 100%;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 419px) {
+      padding: 10px 24px;
+      @include text-tyles(16px, 1.56);
+    }
+    @media screen and (min-width: 420px) {
       padding: 77px 24px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
