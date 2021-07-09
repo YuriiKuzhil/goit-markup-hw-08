@@ -4,28 +4,26 @@
   background-color: $footer-background-color;
 }
 .footer-section__container {
-  
-  @media screen and (min-width:768px) and (max-width:1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
   }
-  
 }
 .address-container {
-  @media screen and (max-width:1199px){
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
-     text-align: center;
+    text-align: center;
   }
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     margin-right: 165px;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
@@ -60,13 +58,13 @@
   }
 }
 .footer-socials-container {
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media screen and (max-width:1999px){
-     text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }
@@ -81,17 +79,16 @@
   color: $primary-white-color;
 }
 .footer-form {
-  @media screen and (max-width:1199px){
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
   &__wrapper {
-    @media screen and (min-width:1200px){
+    @media screen and (min-width: 1200px) {
       display: flex;
     }
-    
   }
   &__label {
-    @media screen and (min-width:1200px){
+    @media screen and (min-width: 1200px) {
       margin-right: 12px;
     }
   }
@@ -100,21 +97,21 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
-    @media screen and (max-width:1199px){
-      margin-bottom: 20px;  
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
     }
-    
+
     height: 50px;
-    @media screen and (max-width:479px){
+    @media screen and (max-width: 479px) {
       width: 100%;
     }
-    @media screen and (min-width:480px) and (max-width:1999px){
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
       width: 450px;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width: 1200px) {
       width: 358px;
     }
-    
+
     background-color: $footer-background-color;
     border: 1px solid $footer-input-border-color;
     border-radius: 4px;
@@ -133,7 +130,7 @@
     padding-left: 29px;
     padding-right: 28px;
 
-    @media screen and (max-width:1199px){
+    @media screen and (max-width: 1199px) {
       margin: auto;
     }
   }

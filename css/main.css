@@ -1070,7 +1070,7 @@
   }
 }
 
-@media screen and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
   .footer-socials-container {
     text-align: center;
   }
@@ -1133,7 +1133,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1999px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-form__input {
     width: 450px;
   }
@@ -1174,7 +1174,7 @@
 
 @media screen and (min-width: 768px) {
   .button-list {
-    margin-bottom: 14px;
+    margin-bottom: 30px;
     justify-content: center;
   }
 }
